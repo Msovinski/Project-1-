@@ -10,15 +10,16 @@
 
     <title>Hello, world!</title>
     <style>
-      /*body{
-            background-image: url("https://images.wallpaperscraft.com/image/coffee_foam_beverage_cup_saucer_creative_continents_84944_1920x1080.jpg");
-            background-repeat: no-repeat;
-        }*/
-
-      .jumbotron-fluid {
+        body {
             background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
             background-repeat: no-repeat;
         }
+        /*.jumbotron-fluid {
+            background-image: url("https://images.wallpaperscraft.com/image/coffee_foam_beverage_cup_saucer_creative_continents_84944_1920x1080.jpg");
+            background-repeat: no-repeat;
+            margin-bottom: 1700px;
+        }*/
+
       .btn-outline-success {
         position:center;
         padding: 10px;
@@ -69,6 +70,56 @@
               <div class="container"> 
                 <h1 class="display-4">Git-Grub</h1>
                 <p class="lead">Where your cravings navigate you.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  Refine Search Here.
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                <label for="formGroupExampleInput">Cravings 1</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                              </div>
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput">Cravings 2</label>
+                                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Cravings 3</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                  </div>
+                              <div class="form-group">
+                                <label for="formGroupExampleInput2">zip code</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                              </div>
+                              <div class="form-group">
+                                  <label for="exampleFormControlSelect1">Party size</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                            </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <button type="button" class="btn btn-outline-success">button</button>
@@ -81,32 +132,64 @@
             <button type="button" class="btn btn-outline-success">button</button>
               <br>
               <br>
-            <ul class="list-unstyled">
-                <li class="media">
-                  <img src="http://www.visitruidoso.com/wp-content/uploads/2017/06/download-3-269x187.jpg"width="300px" height="200px" class="mr-3" alt="...">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">Mexican-List-based media object.</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulm in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <br><a href="#" class="stretched-link">Go somewhere</a>
+              <div class="container">
+                    <div class="row">
+                      <div class="col-sm"><div class="card" style="width: 18rem;">
+                            <img src="http://www.visitruidoso.com/wp-content/uploads/2017/06/download-3-269x187.jpg"width="300px" height="200px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mexican</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Near by</li>
+                              <li class="list-group-item">Recommended</li>
+                              <li class="list-group-item">$$</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
+                            </div>
+                          </div>
+                        One of three columns
+                      </div>
+                      <div class="col-sm"><div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IuGEdTwI0N0-Mwch8lstcGqrLK15LNhxikpoTIS7GNbw-XKQ"width="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Italian</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">1.2 miles away</li>
+                              <li class="list-group-item">Recommended by your searches</li>
+                              <li class="list-group-item">$$$$</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
+                            </div>
+                          </div>
+                        One of three columns
+                      </div>
+                      <div class="col-sm"><div class="card" style="width: 18rem;">
+                            <img src="https://www.happyfamilyorganics.com/wp-content/uploads/2018/08/70-Eating-habits-while-trying-to-get-pregnant_682992553.jpg"width="300px" height="200px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Indian</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">1.8 miles away</li>
+                              <li class="list-group-item">Popular in your area.</li>
+                              <li class="list-group-item"></li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
+                            </div>
+                          </div>
+                        One of three columns
+                      </div>
+                    </div>
                   </div>
-                </li>
-                <li class="media my-4">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IuGEdTwI0N0-Mwch8lstcGqrLK15LNhxikpoTIS7GNbw-XKQ"width="300px" height="200px" class="mr-3" alt="...">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">Italian</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <br><a href="#" class="stretched-link">Go somewhere</a>
-                  </div>
-                </li>
-                <li class="media">
-                  <img src="https://www.happyfamilyorganics.com/wp-content/uploads/2018/08/70-Eating-habits-while-trying-to-get-pregnant_682992553.jpg"width="300px" height="200px" class="mr-3" alt="...">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">Indian-List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <br><a href="#" class="stretched-link">Go somewhere</a>
-                  </div>
-                </li>
-              </ul>
       </div>
 
 
