@@ -4,31 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="../Project-1-/style.css">
     <title>Hello, world!</title>
-    <style>
-        body {
-            background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
-            background-repeat: no-repeat;
-        }
-        /*.jumbotron-fluid {
-            background-image: url("https://images.wallpaperscraft.com/image/coffee_foam_beverage_cup_saucer_creative_continents_84944_1920x1080.jpg");
-            background-repeat: no-repeat;
-            margin-bottom: 1700px;
-        }*/
-
-      .btn-outline-success {
-        position:center;
-        padding: 10px;
-        margin:10px;
-        margin-left:35px;
-      }
-    </style>
+  
   </head>
   <body>
+            <!--Start of the navigation bar-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,6 +31,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                 </a>
+                <!--Dropdown tab in navbar-->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
@@ -54,18 +39,23 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
+              <!--Disabled tab in navbar-->
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-4">
+              <!--Search form in jumbotron-->
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
         </nav>
+        <!--END OF NAVBAR.-->
         
+        <!--Jumbotron container-->
       <div class="container">
+        <!--Jumbotron-->
           <div class="jumbotron jumbotron-fluid">
               <div class="container"> 
                 <h1 class="display-4">Git-Grub</h1>
@@ -73,37 +63,48 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                   Refine Search Here.
                 </button>
-                <!-- Modal -->
+
+                <!--Start of modal inside jumbotron-->
+
+                        <!--"Modal-header"-->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+
+                                <!--"X" close button on modal header-->
+
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
+                                <!--End of modal-header-->
+
+                                <!--Start of "modal-body"-->
                       <div class="modal-body">
+                        
+                                <!--"form-group" inside the modal-->
                           <form>
                               <div class="form-group">
-                                <label for="formGroupExampleInput">Cravings 1</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                <label for="formGroupInput1">Cravings 1</label>
+                                <input type="text" class="form-control" id="formGroupInput1" placeholder="Example input">
                               </div>
                               <div class="form-group">
-                                  <label for="formGroupExampleInput">Cravings 2</label>
-                                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                  <label for="formGroupInput2">Cravings 2</label>
+                                  <input type="text" class="form-control" id="formGroupInput2" placeholder="Example input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput">Cravings 3</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                    <label for="formGroupInput3">Cravings 3</label>
+                                    <input type="text" class="form-control" id="formGroupInput3" placeholder="Example input">
                                   </div>
                               <div class="form-group">
-                                <label for="formGroupExampleInput2">zip code</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                <label for="formGroupInput4">zip code</label>
+                                <input type="number" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
                               </div>
                               <div class="form-group">
-                                  <label for="exampleFormControlSelect1">Party size</label>
-                                  <select class="form-control" id="exampleFormControlSelect1">
+                                  <label for="FormControlSelect1">Party size</label>
+                                  <select class="form-control" id="FormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -112,7 +113,9 @@
                                   </select>
                                 </div>
                             </form>
+                            <!--END OF "form-group" FOR MODAL-->
                       </div>
+                            <!--form-group modal footer-->
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
@@ -120,8 +123,10 @@
                     </div>
                   </div>
                 </div>
+                <!--END OF MODAL-->
               </div>
             </div>
+            <!--Buttons below the jumbotron-->
             <button type="button" class="btn btn-outline-success">button</button>
             <button type="button" class="btn btn-outline-success">button</button>
             <button type="button" class="btn btn-outline-success">button</button>
@@ -132,10 +137,14 @@
             <button type="button" class="btn btn-outline-success">button</button>
               <br>
               <br>
+
+              <!--Start of body container with 1 row/3 col-->
               <div class="container">
                     <div class="row">
+
+                      <!--Start of card body 1-->
                       <div class="col-sm"><div class="card" style="width: 18rem;">
-                            <img src="http://www.visitruidoso.com/wp-content/uploads/2017/06/download-3-269x187.jpg"width="300px" height="200px" class="card-img-top" alt="...">
+                            <img src ="http://www.visitruidoso.com/wp-content/uploads/2017/06/download-3-269x187.jpg"width="300px" height="200px" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Mexican</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -150,8 +159,10 @@
                               <a href="#" class="card-link">Another link</a>
                             </div>
                           </div>
-                        One of three columns
                       </div>
+                      <!--End of card body 1-->
+
+                      <!--Start of card-body 2-->
                       <div class="col-sm"><div class="card" style="width: 18rem;">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IuGEdTwI0N0-Mwch8lstcGqrLK15LNhxikpoTIS7GNbw-XKQ"width="300px" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -168,8 +179,10 @@
                               <a href="#" class="card-link">Another link</a>
                             </div>
                           </div>
-                        One of three columns
                       </div>
+                      <!--End of card-body 2-->
+
+                      <!--Start of card-body 3-->
                       <div class="col-sm"><div class="card" style="width: 18rem;">
                             <img src="https://www.happyfamilyorganics.com/wp-content/uploads/2018/08/70-Eating-habits-while-trying-to-get-pregnant_682992553.jpg"width="300px" height="200px" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -186,8 +199,8 @@
                               <a href="#" class="card-link">Another link</a>
                             </div>
                           </div>
-                        One of three columns
                       </div>
+                      <!--End of card-body 3-->
                     </div>
                   </div>
       </div>
