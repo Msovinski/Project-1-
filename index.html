@@ -87,24 +87,25 @@
                                 <!--"form-group" inside the modal-->
                           <form>
                               <div class="form-group">
-                                <label for="formGroupInput1">Cravings 1</label>
-                                <input type="text" class="form-control" id="formGroupInput1" placeholder="Example input">
+
+                                <label for="crave-1-input">Cravings 1</label>
+                                <input type="text" class="form-control" id="crave-1-input" placeholder="Example input">
                               </div>
                               <div class="form-group">
-                                  <label for="formGroupInput2">Cravings 2</label>
-                                  <input type="text" class="form-control" id="formGroupInput2" placeholder="Example input">
+                                  <label for="crave-2-input">Cravings 2</label>
+                                  <input type="text" class="form-control" id="crave-2-input" placeholder="Example input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupInput3">Cravings 3</label>
-                                    <input type="text" class="form-control" id="formGroupInput3" placeholder="Example input">
+                                    <label for="crave-3-input">Cravings 3</label>
+                                    <input type="text" class="form-control" id="crave-3-input" placeholder="Example input">
                                   </div>
                               <div class="form-group">
-                                <label for="formGroupInput4">zip code</label>
-                                <input type="number" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
+                                <label for="zip-input">zip code</label>
+                                <input type="text" class="form-control" id="zip-input" placeholder="Another input">
                               </div>
                               <div class="form-group">
-                                  <label for="FormControlSelect1">Party size</label>
-                                  <select class="form-control" id="FormControlSelect1">
+                                  <label for="party-input">Party size</label>
+                                  <select class="form-control" id="party-input">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -118,7 +119,7 @@
                             <!--form-group modal footer-->
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" id="save" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -126,6 +127,8 @@
                 <!--END OF MODAL-->
               </div>
             </div>
+
+
             <!--Buttons below the jumbotron-->
             <button type="button" class="btn btn-outline-success">button</button>
             <button type="button" class="btn btn-outline-success">button</button>
@@ -212,5 +215,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
