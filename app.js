@@ -1,6 +1,6 @@
 // 1. Create Firebase link
 // 1a. Initialize Firebase
-<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
 
   // Initialize Firebase
   var config = {
@@ -31,11 +31,11 @@ var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + userZi
 // ------------------ functions ----------------
 // ------------------ still in progress ------------
 
-// 4. Ajax call function
-// $.ajax({
-//     url: weatherURL,
-//     method: "GET"
-//   }).then(function(weatherNow) {
+//4. Ajax call function
+$.ajax({
+    url: weatherURL 
+    method: "GET"
+}).then(function(weatherNow) {
 
 
 // ----------- method I found on Stack overflow, but havent gotten it to work either ---------
@@ -52,3 +52,12 @@ var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + userZi
     //     userZip = $("#saveChangesButton").val().trim()
     //     console.log("click");
     // });
+
+    $("#addTrain").on("click", function(event){
+      event.preventDefault();
+    firstCraving = $("#trainInput").val().trim();
+    trainDestination = $("#destinationInput").val().trim();
+    startTime = $("#firstTrainTimeInput").val().trim();
+    frequency = $("#frequencyInput").val().trim();
+    
+    $("#addTrain").val()
