@@ -40,13 +40,39 @@ function ajaxCall(search){
       console.log(weatherResults);
   });
 
-
+  ("crave-2-input").style.visibility = "hidden"
  };
+ $("#partyConfirm").on("click", function(){
+    var members = $("#party-input").val().trim();
+
+    if(members < 2){
+        document.getElementById("crave-2-input").style.visibility = "hidden";
+    } else {
+        document.getElementById("crave-2-input").style.visibility = "visible"
+    }
+    if(members >= 3){
+        document.getElementById("crave-3-input").style.visibility = "visible";
+    } else {
+        document.getElementById("crave-3-input").style.visibility = "hidden"
+    }
+    if(members >= 4){
+        document.getElementById("crave-4-input").style.visibility = "visible";
+    } else {
+        document.getElementById("crave-4-input").style.visibility = "hidden"
+    }
+    if(members >= 5){
+        document.getElementById("crave-5-input").style.visibility = "visible";
+    } else {
+        document.getElementById("crave-5-input").style.visibility = "hidden"
+    }
+
 $("#save").on("click", function(event){
   event.preventDefault()
   var cravings1 = $("#crave-1-input").val().trim();
   var cravings2 = $("#crave-2-input").val().trim();
   var cravings3 = $("#crave-3-input").val().trim();
+  var cravings4 = $("#crave-4-input").val().trim();
+  var cravings5 = $("#crave-5-input").val().trim();
   var zipcode = $("#zip-input").val().trim();
   var members = $("#party-input").val().trim();
 // make an object to store the user input
@@ -55,10 +81,19 @@ $("#save").on("click", function(event){
        crave1: cravings1,
        crave2: cravings2,
        crave3: cravings3,
+       crave4: cravings4,
+       crave5: cravings5,
        location: zipcode,
       party: members,
   
   };
     console.log(input);
+  
+   // $("#partyConfirm").on("click", function(event){
+       
 });
+});
+
+
+//Form button control
 
