@@ -1,3 +1,4 @@
+
 body {
     background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
     background-repeat: no-repeat;
@@ -24,4 +25,30 @@ position:center;
 padding: 10px;
 margin:10px;
 margin-left:35px; 
+
+body {
+    background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
+    background-repeat: no-repeat;
+}
+.jumbotron-fluid {
+  /* background-color: rgb(203, 205, 207);*/
+  background-image: url("http://www.sompaisoscatalans.cat/simage/small/13/137503/modern-wallpaper-hd.png");
+  background-repeat: no-repeat;
+  margin-left: 50px;
+}
+
+.btn-outline-success {
+position:center;
+padding: 10px;
+margin:10px;
+margin-left:35px;
+}
+
+.btnChoice {
+    margin: 5px;
+    position: relative;
+}
+.form-group{
+    height: auto;
+
 }
