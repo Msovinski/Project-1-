@@ -1,3 +1,31 @@
+
+body {
+    background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
+    background-repeat: no-repeat;
+}
+.jumbotron-fluid {
+  /* background-color: rgb(203, 205, 207);*/
+  background-image: url("http://www.golden-circle.com/4ac10b/contentassets/ad75afe3128e4148b049f24efdcfa089/gallery_image1c.jpg?mode=crop&width=1366&height=768");
+  background-attachment: fixed; 
+  border-image-width: 1600px;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 400px;
+  min-height: 400px;
+  margin-bottom: 200px;
+  box-shadow: rgba (204,0,255,0.4)inset;
+  background-blend-mode: color-burn;
+  background-size: cover;
+  
+ 
+}
+
+.btn-outline-success {
+position:center;
+padding: 10px;
+margin:10px;
+margin-left:35px; 
+
 body {
     background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
     background-repeat: no-repeat;
@@ -22,4 +50,5 @@ margin-left:35px;
 }
 .form-group{
     height: auto;
+
 }
