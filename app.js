@@ -1,4 +1,3 @@
-
 // 1. Create Firebase link
 // 1a. Initialize Firebase
 
@@ -41,8 +40,8 @@ function ajaxCall(search){
       console.log(weatherResults);
   });
 
-  ("crave-2-input").style.visibility = "hidden"
- };
+  (
+};
  $("#partyConfirm").on("click", function(){
     var members = $("#party-input").val().trim();
 
