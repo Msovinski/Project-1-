@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,64 +8,20 @@
     <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <link rel="stylesheet" type="text/css" href="../Project-1-/style.css">
-    <title>Hello, world!</title>
+    <title>Git-Grub!</title>
   
   </head>
   <body>
-            <!--Start of the navigation bar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <!--Dropdown tab in navbar-->
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <!--Disabled tab in navbar-->
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-4">
-              <!--Search form in jumbotron-->
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-        <!--END OF NAVBAR.-->
-        
-        <!--Jumbotron container-->
-      <div class="container">
-        <!--Jumbotron-->
-          <div class="jumbotron jumbotron-fluid">
-              <div class="container"> 
-                <h1 class="display-4">Git-Grub</h1>
-                <p class="lead">Where your cravings navigate you.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                  Refine Search Here.
-                </button>
-
-                <!--Start of modal inside jumbotron-->
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container"> 
+            <h1 class="display-4">Git-Grub</h1>
+            <p class="lead">Where your cravings navigate you.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Refine Search Here.
+              </button> 
+      
 
                         <!--"Modal-header"-->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -83,22 +40,75 @@
 
                                 <!--Start of "modal-body"-->
                       <div class="modal-body">
-                        
-                                <!--"form-group" inside the modal-->
-                          <form>
-                              <div class="form-group">
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
+                          <button type="button" class="btn btn-outline-success">button</button>
 
-                                <label for="crave-1-input">Cravings 1</label>
-                                <input type="text" class="form-control" id="crave-1-input" placeholder="Example input">
-                              </div>
-                              <div class="form-group">
-                                  <label for="crave-2-input">Cravings 2</label>
-                                  <input type="text" class="form-control" id="crave-2-input" placeholder="Example input">
-                                </div>
-                                <div class="form-group">
-                                    <label for="crave-3-input">Cravings 3</label>
-                                    <input type="text" class="form-control" id="crave-3-input" placeholder="Example input">
+                                <!--"form-group" inside the modal-->
+                                <form>
+                                    <div class="form-group">
+                                            <label for="party-input">Party size</label>
+                                            <select class="form-control" id="party-input">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                            </select>
+                                          </div>
+                                          <button  type="button" class="btn btn-primary" id="partyConfirm">
+                                                  Confirm Party Size
+                                                </button>
+                                        <div class="form-group" id="crave-1-input" >
+                                            <label>Cravings for person 1</label>
+                                              <button type="button" class="btnChoice">Italian</button>
+                                              <button type="button" class="btnChoice">American</button>
+                                              <button type="button" class="btnChoice">Chinese</button>
+                                              <button type="button" class="btnChoice">Mexican</button>
+                                              <button type="button" class="btnChoice">Indian</button>
+                                            </div>
+                                        <div class="form-group"   id="crave-2-input">
+                                            <label>Cravings for person 2</label>
+                                              <button type="button" class="btnChoice">Italian</button>
+                                              <button type="button" class="btnChoice">American</button>
+                                              <button type="button" class="btnChoice">Chinese</button>
+                                              <button type="button" class="btnChoice">Mexican</button>
+                                              <button type="button" class="btnChoice">Indian</button>
+                                            </div>
+                                            <div class="form-group"  id="crave-3-input">
+                                                    <label>Cravings for person 3</label>
+                                                      <button type="button" class="btnChoice">Italian</button>
+                                                      <button type="button" class="btnChoice">American</button>
+                                                      <button type="button" class="btnChoice">Chinese</button>
+                                                      <button type="button" class="btnChoice">Mexican</button>
+                                                      <button type="button" class="btnChoice">Indian</button>
+                                                    </div>
+                                                    <div class="form-group" id="crave-4-input">
+                                                            <label >Cravings for person 4</label>
+                                                              <button type="button" class="btnChoice">Italian</button>
+                                                              <button type="button" class="btnChoice">American</button>
+                                                              <button type="button" class="btnChoice">Chinese</button>
+                                                              <button type="button" class="btnChoice">Mexican</button>
+                                                              <button type="button" class="btnChoice">Indian</button>
+                                                    </div>
+                                                    <div class="form-group" id="crave-5-input">
+                                                            <label>Cravings for person 5</label>
+                                                              <button type="button" class="btnChoice">Italian</button>
+                                                              <button type="button" class="btnChoice">American</button>
+                                                              <button type="button" class="btnChoice">Chinese</button>
+                                                              <button type="button" class="btnChoice">Mexican</button>
+                                                              <button type="button" class="btnChoice">Indian</button>
+                                                            </div>
+                                  <div class="form-group">
+                                    <label for="formGroupExampleInput2">zip code</label>
+                                    <input type="text" class="form-control" id="zip-input" placeholder="Another input">
                                   </div>
+<<<<<<< HEAD
                                 <div class="form-group">
                                     <label for="other-crave-input">Other</label>
                                     <input type="text" class="form-control" id="other-crave-input" placeholder="Other Category">
@@ -118,12 +128,16 @@
                                   </select>
                                 </div>
                             </form>
+=======
+                                 
+                                </form>
+>>>>>>> 918608ef5e53c7a55e434e54c20e68d08081f108
                             <!--END OF "form-group" FOR MODAL-->
                       </div>
                             <!--form-group modal footer-->
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" id="save" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -131,19 +145,7 @@
                 <!--END OF MODAL-->
               </div>
             </div>
-
-
-            <!--Buttons below the jumbotron-->
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-            <button type="button" class="btn btn-outline-success">button</button>
-              <br>
-              <br>
+           
 
               <!--Start of body container with 1 row/3 col-->
               <div class="container">
@@ -210,7 +212,7 @@
                       <!--End of card-body 3-->
                     </div>
                   </div>
-      </div>
+      
 
 
      
@@ -219,7 +221,4 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
-    <script src="./app.js"></script>
   </body>
-</html>
