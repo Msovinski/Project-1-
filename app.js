@@ -14,21 +14,39 @@
 
   firebase.initializeApp(config);
 
+// --------------------- global variables ------------------
 
 // 2. Create variables to store user data in database (You can do this through the Firebase console online)
 var database = firebase.database();
 
-// 3. weather api key and call
+// weather api key and call
 var weatherApiKey = "6fc19ba254fc6bfa17075467ace4ee41";
 var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + "33330" + ",us" + "&appid=" + weatherApiKey;
-console.log(weatherURL);
+
+var foodCat = ["Italian", "American", "Chinese", "Mexican", "Indian"];
+foodCat.sort();
+console.log(foodCat);
+
 
 
 
 // ------------------ functions ----------------
+function makeButton(name){
+  var button = $("<button class='' data-name=" + name + ">" + name + "</button>")
+  $("#save").prepend(button)
+
+}
+// using the "other"
+$("#save").on("click", function(event){
+  // stop the page from reloading
+  event.preventDefault()
+  userOtherSearch = $("").val().trim()
+  makeButton(userOtherSearch);
+  
+})
 // ------------------ still in progress ------------
 
-//4. Ajax call function
+//4. Ajax call function for weather api
 function ajaxCall(search){
   $.ajax({
       url: weatherURL,
@@ -42,6 +60,8 @@ function ajaxCall(search){
 
 
  };
+
+// save changes button, submits all of the users' input
 $("#save").on("click", function(event){
   event.preventDefault()
   var cravings1 = $("#crave-1-input").val().trim();
