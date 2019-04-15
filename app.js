@@ -39,9 +39,12 @@ function ajaxCall(search){
       var weatherResults = weather.data;
       console.log(weatherResults);
   });
-
-  (
 };
+
+  // array of cuisine types
+  var cravings = ["Italian", "American", "Mexican", "Chinese", "Indian"];
+ 
+
  $("#partyConfirm").on("click", function(){
     var members = $("#party-input").val().trim();
 
@@ -68,28 +71,30 @@ function ajaxCall(search){
 
 $("#save").on("click", function(event){
   event.preventDefault()
-  var cravings1 = $("#crave-1-input").val().trim();
-  var cravings2 = $("#crave-2-input").val().trim();
-  var cravings3 = $("#crave-3-input").val().trim();
-  var cravings4 = $("#crave-4-input").val().trim();
-  var cravings5 = $("#crave-5-input").val().trim();
+//   var cravings1 = $("#crave-1-input").val().trim();
+//   var cravings2 = $("#crave-2-input").val().trim();
+//   var cravings3 = $("#crave-3-input").val().trim();
+//   var cravings4 = $("#crave-4-input").val().trim();
+//   var cravings5 = $("#crave-5-input").val().trim();
+var button = $(this).attr("data-name").val().trim();
   var zipcode = $("#zip-input").val().trim();
   var members = $("#party-input").val().trim();
 // make an object to store the user input
   var input = {
 
-       crave1: cravings1,
-       crave2: cravings2,
-       crave3: cravings3,
-       crave4: cravings4,
-       crave5: cravings5,
+    //    crave1: cravings1,
+    //    crave2: cravings2,
+    //    crave3: cravings3,
+    //    crave4: cravings4,
+    //    crave5: cravings5,
+    craving: button,
        location: zipcode,
       party: members,
   
   };
     console.log(input);
   
-   // $("#partyConfirm").on("click", function(event){
+   
        
 });
 });
