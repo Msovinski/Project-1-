@@ -40,7 +40,7 @@ function ajaxCall(search){
       console.log(weatherResults);
   });
 
-  (
+  
 };
  $("#partyConfirm").on("click", function(){
     var members = $("#party-input").val().trim();
