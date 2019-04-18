@@ -68,110 +68,100 @@ $("#partyConfirm").on("click", function() {
   } else {
     document.getElementById("crave-5-input").style.visibility = "hidden";
   }
-
-  // click function/event listener for save changes
-
-  $("#save").on("click", function(event) {
-    event.preventDefault();
-   
-    // obtain zip code and party size values
-    var zipcode = $("#zip-input")
-      .val()
-      .trim();
-    var members = $("#party-input")
-      .val()
-      .trim();
-
-    // make an object to store the user input
-    var input = {
-    
-      location: zipcode,
-      party: members
-    };
-    console.log(input);
-
-    
-    // pick the majority selected
-  picks.forEach((element) => {
-    cuisine[element].picks++;
-  });
-  // variable for most selected cuisine
-  var maxPick = 0;
-  //variable to set a default in case nothing is clicked
-  var bestChoice = "Greek";
-  // iteratinf through the cuisines clicked and selecting the most clicked
-  for (var property in cuisine) {
-    var currentPick = cuisine[property].picks
-    console.log(currentPick);
-    if (currentPick > maxPick) {
-      bestChoice = property;
-      maxPick = currentPick;
-    }
-  }
-
-  console.log("Survey says... " + bestChoice); // console logging the result
-
- // put the majority in the api call
- $.ajax({
-  "async": true,
-  "crossDomain": true,
-  "url": "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=" + bestChoice + "&location=" 
-  + zipcode,
-  "method": "GET",
-  "headers": {
-    "authorization": "Bearer TguaEbsqVv3hvtSt41pPee4Y5t5Gey8ZsSdbkgvmVjPXoN3xOjbUIH-1rXcwhfVk9DResP7FUTSWoWePZqzLi4WMfP1VbRA0fuxRx-vC9uA_GM6VH4sAidogGJCuXHYx",
-    "cache-control": "no-cache"
-  }
-})
-.done(function (response) {
-  console.log(response);
 });
-   
 
+// click function/event listener for save changes
+$("#save").on("click", function(event) {
+  event.preventDefault();
+
+  // obtain zip code and party size values
+  var zipcode = $("#zip-input")
+    .val()
+    .trim();
+  var members = $("#party-input")
+    .val()
+    .trim();
+
+  // make an object to store the user input
+  var input = {
+    location: zipcode,
+    party: members
+  };
+  console.log(input);
+
+  // variable to set a default in case nothing is clicked
+  var bestChoice;
+  // pick the majority selected
+
+  picks.forEach(element => {
+    cuisine[element].picks++;
+
+    // variable for most selected cuisine
+    var maxPick = 0;
+
+    // iterating through the cuisines clicked and selecting the most clicked
+    for (var property in cuisine) {
+      var currentPick = cuisine[property].picks;
+      console.log(currentPick);
+      if (currentPick > maxPick) {
+        bestChoice = property.toLowerCase();
+        maxPick = currentPick;
+      }
+    }
   });
+  
+  console.log("Survey says... " + bestChoice); // console logging the result
+  // put the majority and zipcode in the api call
+  $.ajax({
+    async: true,
+    crossDomain: true,
+    url:
+      "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=" +
+      bestChoice +
+      "&location=" +
+      zipcode,
+    method: "GET",
+    headers: {
+      authorization:
+        "Bearer TguaEbsqVv3hvtSt41pPee4Y5t5Gey8ZsSdbkgvmVjPXoN3xOjbUIH-1rXcwhfVk9DResP7FUTSWoWePZqzLi4WMfP1VbRA0fuxRx-vC9uA_GM6VH4sAidogGJCuXHYx",
+      "cache-control": "no-cache"
+    }
+  }).done(function(response) {
+    console.log(response);
+  });
+  // response.business[i].categories[i]
 });
 
 // // event listener to store button value
- $(".btnChoice").on("click", function(event) {
+$(".btnChoice").on("click", function(event) {
   var buttonValue = $(this).text();
   console.log(buttonValue);
   picks.push(buttonValue);
- });
- 
- // global variable for picking cuisines
- var picks = ["Italian","American", "Chinese", "Mexican", "Indian"];
+});
+
+// global variable for picking cuisines
+var picks = ["Italian", "American", "Chinese", "Mexican", "Indian"];
 // global object of cuisine types
 var cuisine = {
-  "Italian": {
+  Italian: {
     picks: 0,
     name: "Italian"
   },
-  "American": {
+  American: {
     picks: 0,
     name: "American"
   },
-  "Chinese": {
+  Chinese: {
     picks: 0,
     name: "Chinese"
   },
-  "Mexican": {
+  Mexican: {
     picks: 0,
     name: "Mexican"
   },
-  "Indian": {
+  Indian: {
     picks: 0,
     name: "Indian"
-  },
+  }
 };
 console.log(cuisine);
-
-
-
-
-
-
- 
-
-
- 
- 
