@@ -2,14 +2,25 @@ body {
     background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
     background-repeat: no-repeat;
 }
+.display-4 {
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.lead {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  
+}
 .jumbotron-fluid {
   /* background-color: rgb(203, 205, 207);*/
   background-image: url("http://www.golden-circle.com/4ac10b/contentassets/ad75afe3128e4148b049f24efdcfa089/gallery_image1c.jpg?mode=crop&width=1366&height=768");
   background-attachment: fixed; 
-  border-image-width: 1600px;
-  background-repeat: no-repeat;
+  /*border-image-width: 1600px;*/
+  /*background-repeat: no-repeat;*/
   width:100%;
-  height: 400px;
+  height: 300px;
   background-size: cover;
   background-blend-mode:color-burn;
 }
@@ -28,7 +39,7 @@ body {
   text-decoration: none;
   font-family: sans-serif;
   box-sizing: border-box;
-  background: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #b90505,#ffeb3b,#0ef006);
   background-size: 400%;
   z-index: 1;
   border-color: black;
@@ -55,7 +66,7 @@ body {
   right: -5px;
   bottom: -5px;
   z-index:  -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #df3125,#ffeb3b,#03a9f4);
   background-size: 400%;
   border-radius: 45px;
   filter: blur(20px);
@@ -81,9 +92,11 @@ margin-left:35px;
     background-color: white;
 }
 .form-group{
-    height: 100px;
-    background-color: white;
+    height: auto;
+    background-color: lightgrey;
     border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+      
 }
 .modal-body{
     background-image: url("http://www.sompaisoscatalans.cat/simage/small/13/137503/modern-wallpaper-hd.png");
@@ -92,6 +105,7 @@ margin-left:35px;
     margin-top:5px;
     margin-right: 300px;
     float: right;
+    height: auto; 
 
 }
 #partyConfirm{
@@ -105,4 +119,67 @@ margin-left:35px;
 }
 .modal-header{
     background-color: darkgray;
+}
+.row {
+  height: auto;
+}
+.footer, .push {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(186, 186, 189);
+  color: rgb(116, 109, 109);
+  text-align: center;
+  line-height: 70px;
+  font-size: 25px;
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 3px;
+  animation-delay: 3s;
+}
+.empty {
+  height:250px;
+}
+.btnChoice {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #e41111,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  z-index: 1;
+}
+.btnChoice:hover
+{
+ animation: animate 8s linear infinite;
+}
+@keyframes animate {
+ 0% {
+   background-position: 0%;
+ }
+ 100% {
+   background-position: 400%;
+ }
+}
+.btnChoice:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index:  -1;
+  background: linear-gradient(90deg, #03a9f4, #e71e1e,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 45px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.btnChoice:hover:before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
 }

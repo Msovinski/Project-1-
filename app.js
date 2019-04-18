@@ -23,11 +23,21 @@ var weatherApiKey = "6fc19ba254fc6bfa17075467ace4ee41";
 var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + "33330" + ",us" + "&appid=" + weatherApiKey;
 console.log(weatherURL);
 
-
-
+var zApiKey = "635ef36c59bd19a6a241a85b82913a63";
+var zomatoURL = "https://developers.zomato.com/api/v2.1/search?entity_id=259&entity_type=city&start=0&count=20 " + zApiKey;
+console.log(zomatoURL);
+   //API for zomato 635ef36c59bd19a6a241a85b82913a63.
 // ------------------ functions ----------------
-// ------------------ still in progress ------------
-
+// ------------------ still in progress --------
+// zomato Ajax call 
+$(function() {
+    $.ajax({
+        url: zomatoURL,
+        method: "GET"
+    }).then(function(cities) {
+        console.log(cities);
+    });
+});
 //4. Ajax call function
 function ajaxCall(search){
   $.ajax({
