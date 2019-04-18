@@ -26,8 +26,6 @@ var weatherURL =
   weatherApiKey;
 console.log(weatherURL);
 
-// ------------------ functions ----------------
-// ------------------ still in progress ------------
 
 //4. Ajax call function
 function ajaxCall(search) {
