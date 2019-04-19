@@ -18,12 +18,8 @@
   </head>
 
   <body>
-        <!--Jumbotron-->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container"> 
-
+    
               <!------------ Weather widget  -------->
-
               <div id="weather"></div>
 
 
@@ -45,7 +41,7 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                          <div class="form-group">
+                          <div class="other-group">
                                   <label for="party-input" class=otherlabel>Party size</label>
                                   <select class="form-control" id="party-input">
                                     <option>1</option>
@@ -56,11 +52,11 @@
                                   </select>
                                 </div>
                             <div>
-                                <button  type="button" class="animated slideInRight duration-3s btn btn-success" id="partyConfirm">
+                                <button  type="button" class="animated slideInRight duration-3s btn btn-info" id="partyConfirm">
                                         Confirm Party Size
                                       </button>
                                 </div>
-                              <div class="form-group" id="crave-1-input" >
+                              <div class="form-group" id="crave-1-input" style="display: none">
                                   <label class="cravinglabel">Cravings for person 1</label>
                                     <button type="button" class="btnChoice">Italian</button>
                                     <button type="button" class="btnChoice">American</button>
@@ -68,7 +64,8 @@
                                     <button type="button" class="btnChoice">Mexican</button>
                                     <button type="button" class="btnChoice">Indian</button>
                                   </div>
-                              <div class="form-group"   id="crave-2-input" visibility="none">
+
+                              <div class="form-group"   id="crave-2-input" style="display: none">
                                   <label class="cravinglabel">Cravings for person 2</label>
                                     <button type="button" class="btnChoice">Italian</button>
                                     <button type="button" class="btnChoice">American</button>
@@ -76,7 +73,8 @@
                                     <button type="button" class="btnChoice">Mexican</button>
                                     <button type="button" class="btnChoice">Indian</button>
                                   </div>
-                                  <div class="form-group"  id="crave-3-input" display="none">
+
+                                  <div class="form-group"  id="crave-3-input" style="display: none">
                                           <label class="cravinglabel">Cravings for person 3</label>
                                             <button type="button" class="btnChoice">Italian</button>
                                             <button type="button" class="btnChoice">American</button>
@@ -84,7 +82,8 @@
                                             <button type="button" class="btnChoice">Mexican</button>
                                             <button type="button" class="btnChoice">Indian</button>
                                           </div>
-                                          <div class="form-group" id="crave-4-input" display="none">
+
+                                          <div class="form-group" id="crave-4-input" style="display: none">
                                                   <label class="cravinglabel">Cravings for person 4</label>
                                                     <button type="button" class="btnChoice">Italian</button>
                                                     <button type="button" class="btnChoice">American</button>
@@ -92,7 +91,8 @@
                                                     <button type="button" class="btnChoice">Mexican</button>
                                                     <button type="button" class="btnChoice">Indian</button>
                                           </div>
-                                          <div class="form-group" id="crave-5-input" display="none">
+                      
+                                          <div class="form-group" id="crave-5-input" style="display: none">
                                                   <label class="cravinglabel">Cravings for person 5</label>
                                                     <button type="button" class="btnChoice">Italian</button>
                                                     <button type="button" class="btnChoice">American</button>
@@ -100,15 +100,16 @@
                                                     <button type="button" class="btnChoice">Mexican</button>
                                                     <button type="button" class="btnChoice">Indian</button>
                                                   </div>
-                        <div class="form-group">
+                        <div class="other-group">
                           <label for="formGroupExampleInput2" class=otherlabel>zip code</label>
                           <input type="text" class="form-control" id="zip-input" placeholder="Another input">
                         </div>
+
                       </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success" id="save">Save changes</button>
+                  <button type="button" class="btn btn-success" id="save">Search</button>
                 </div>
               </div>
             </div>
@@ -124,26 +125,8 @@
               <!--Start of body container with 1 row/3 col-->
 <div class="container">
   <div class="row">
-           <!--Start of card body 1-->
-    <div class="col-sm"><div class="card" style="width: 18rem;">
-          <img src ="http://www.visitruidoso.com/wp-content/uploads/2017/06/download-3-269x187.jpg"width="300px" height="200px" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mexican</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Near by</li>
-              <li class="list-group-item">Recommended</li>
-              <li class="list-group-item">$$</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-      </div>
-                      <!--End of card body 1-->
-    <!--Start of card-body 2-->
+
+    <!--Start of card-body-->
     <div class="col-sm"><div class="card" style="width: 18rem;">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IuGEdTwI0N0-Mwch8lstcGqrLK15LNhxikpoTIS7GNbw-XKQ"width="300px" height="200px" class="card-img-top" alt="...">
           <div class="card-body">
@@ -161,32 +144,9 @@
           </div>
         </div>
     </div>
-                      <!--End of card-body 2-->
-                      <!--Start of card-body 3-->
-    <div class="col-sm"><div class="card" style="width: 18rem;">
-          <img src="https://www.happyfamilyorganics.com/wp-content/uploads/2018/08/70-Eating-habits-while-trying-to-get-pregnant_682992553.jpg"width="300px" height="200px" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Indian</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">1.8 miles away</li>
-            <li class="list-group-item">Popular in your area.</li>
-            <li class="list-group-item"></li>
-          </ul>
-            <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
 
-        </div>
-    </div>
-                      <!--End of card-body 3-->
-  </div>
-  <div class="empty"></div>
-  <div class="push"></div>
-<footer class="animated bounceInRight footer">&copy;A project brought to you by, The Midi-Clorians.</footer>
-</div>
+
+<!-- End of card body-->
 
 
       
@@ -200,4 +160,5 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
     <script src="app.js"></script>
   </body>
+
 </html>
