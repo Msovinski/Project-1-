@@ -49,25 +49,30 @@
       .val()
       .trim();
 
-    if (members < 2) {
-      document.getElementById("crave-2-input").style.visibility = "hidden";
+    if (members < 1) {
+      document.getElementById("crave-1-input").style.display= "none";
     } else {
-      document.getElementById("crave-2-input").style.visibility = "visible";
+      document.getElementById("crave-1-input").style.display= "block";
     }
+    if (members >= 2) {
+        document.getElementById("crave-2-input").style.display= "block";
+      } else {
+        document.getElementById("crave-2-input").style.display= "none";
+      }
     if (members >= 3) {
-      document.getElementById("crave-3-input").style.visibility = "visible";
+      document.getElementById("crave-3-input").style.display= "block";
     } else {
-      document.getElementById("crave-3-input").style.visibility = "hidden";
+      document.getElementById("crave-3-input").style.display= "none";
     }
     if (members >= 4) {
-      document.getElementById("crave-4-input").style.visibility = "visible";
+      document.getElementById("crave-4-input").style.display= "block";
     } else {
-      document.getElementById("crave-4-input").style.visibility = "hidden";
+      document.getElementById("crave-4-input").style.display= "none";
     }
     if (members >= 5) {
-      document.getElementById("crave-5-input").style.visibility = "visible";
+      document.getElementById("crave-5-input").style.display= "block";
     } else {
-      document.getElementById("crave-5-input").style.visibility = "hidden";
+      document.getElementById("crave-5-input").style.display= "none";
     }
   });
 

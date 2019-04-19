@@ -103,10 +103,11 @@ margin-left:35px;
     background-color: rgb(146, 146, 146);
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-      
+    width: 500px;
 }
 .modal-body{
     background-image: url("http://www.sompaisoscatalans.cat/simage/small/13/137503/modern-wallpaper-hd.png");
+    width: 550px;
 }
 .cravinglabel{
     margin-top:5px;
@@ -126,8 +127,13 @@ margin-left:35px;
 .otherlabel{
     margin-left: 20px;
 }
+.modal-footer{
+    background-color: darkgray;
+    width: 550px;
+}
 .modal-header{
     background-color: darkgray;
+    width: 550px;
 }
 .row {
   height: auto;
