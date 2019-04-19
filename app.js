@@ -1,4 +1,5 @@
 
+
   // 1. Create Firebase link
   // 1a. Initialize Firebase
 
@@ -209,3 +210,4 @@
     }
   };
   console.log(cuisine);
+
