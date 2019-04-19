@@ -91,21 +91,34 @@ margin-left:35px;
     border-radius: 25px;
     background-color: white;
 }
-.form-group{
-    height: auto;
+.other-group{
+    height: 100px;
     background-color: lightgrey;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-      
+    margin-bottom: 25px;
+}
+.form-group{
+    height: auto ;
+    background-color: rgb(146, 146, 146);
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+
 }
 .modal-body{
     background-image: url("http://www.sompaisoscatalans.cat/simage/small/13/137503/modern-wallpaper-hd.png");
+    width: 550px;
 }
 .cravinglabel{
     margin-top:5px;
-    margin-right: 300px;
+    margin-right: 250px;
     float: right;
     height: auto; 
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 300;
 
 }
 #partyConfirm{
@@ -117,8 +130,15 @@ margin-left:35px;
 .otherlabel{
     margin-left: 20px;
 }
+.modal-footer{
+    background-color: darkgray;
+    width: 550px;
+}
 .modal-header{
     background-color: darkgray;
+
+    width: 550px;
+
 }
 .row {
   height: auto;
