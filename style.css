@@ -91,34 +91,22 @@ margin-left:35px;
     border-radius: 25px;
     background-color: white;
 }
-.other-group{
-    height: 100px;
+.form-group{
+    height: auto;
     background-color: lightgrey;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 25px;
-}
-.form-group{
-    height: auto ;
-    background-color: rgb(146, 146, 146);
-    border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 500px;
-
+      
 }
 .modal-body{
     background-image: url("http://www.sompaisoscatalans.cat/simage/small/13/137503/modern-wallpaper-hd.png");
-    width: 550px;
+  
 }
 .cravinglabel{
     margin-top:5px;
-    margin-right: 250px;
+    margin-right: 300px;
     float: right;
     height: auto; 
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: 300;
 
 }
 #partyConfirm{
@@ -128,17 +116,22 @@ margin-left:35px;
     border-width: 2px;
 }
 .otherlabel{
+    height: auto;
     margin-left: 20px;
-}
-.modal-footer{
-    background-color: darkgray;
-    width: 550px;
 }
 .modal-header{
     background-color: darkgray;
+}
 
-    width: 550px;
-
+#widgetImage{
+    height: 50px;
+    width: 50px;
+}
+#weather{
+    background-image: url("https://shiftyjelly.files.wordpress.com/2013/11/w.jpg?w=750&h=425");
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 .row {
   height: auto;
@@ -203,3 +196,4 @@ margin-left:35px;
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+
