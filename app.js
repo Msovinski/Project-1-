@@ -124,6 +124,7 @@ $("#partyConfirm").on("click", function() {
 // click function/event listener for save changes
 $("#save").on("click", function(event) {
   event.preventDefault();
+  
 
   // obtain zip code and party size values
   var zipcode = $("#zip-input")
