@@ -1,6 +1,6 @@
 body {
     background-image: url("https://www.trendin-town.com/wp-content/uploads/2017/02/header.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .display-4 {
   font-size: 70px;
@@ -196,4 +196,12 @@ margin-left:35px;
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+.card{
+    display: inline-block;
+    background-color: blanchedalmond;
 
+}
+.list-group-item{
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
