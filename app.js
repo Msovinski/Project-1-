@@ -239,42 +239,25 @@ $("#save").on("click", function(event) {
 
       // looping through the desired results and displaying them in the html by dynamically creating a card using bootstrap classes
       for (var i = 0; i < response.businesses.length; i++) {
-        var newCard = $("<div>");
-        newCard.addClass("col-sm")
-        .addClass("card");
-        var restImage = response.businesses.image;
-        var image = $("<img>");
-        image.addClass("card-img-top");
-        image.attr("src", restImage);
-        newCard.append(image);
-        var newCardBody = $("<div>");
-        newCardBody.addClass("card-body");
-        var newH5 = $("<h5>");
-        newH5.addClass("card-title");
-        var name = response.businesses.name;
-        newCardBody.append(newH5.text(name));
-        var newUl = $("<ul>");
-        newUl.addClass("list-group list-group-flush");
-        var newLi = $("<li>");
-        newLi.addClass("list-group-item");
-        var distance = response.businesses.distance;
-        var newLi2 = $("<li>");
-        newLi2.addClass("list-group-item");
-        var rating = response.businesses.rating;
-        newLi2.append(rating);
-        var newCardBody2 = $("<div>");
-        newCardBody2.addClass("card-body");
-        var a = $("<a>");
-        a.addClass("card-link");
-        var phone = response.businesses.phone;
-        newCardBody2.append(a.text(phone));
-        var a2 =$("<a>");
-        a2.addClass("card-link");
-        var url = response.businesses.url;
-        a2.append(url);
-        $("#venues").append(newCard);
-      } //for loop
-    
+          
+
+        var restaurantName = response.businesses[i].name;
+        var restaurantImage = response.businesses[i].image_url;
+        var restaurantPrice = response.businesses[i].price;
+        var restaurantRating = response.businesses[i].rating;
+        var restaurantAddress = response.businesses[i].location.display_address;
+        var restaurantPhone = response.businesses[i].phone;
+       
+
+        
+
+
+          var htmlCard = '<br>' + '<div class="col-6">' + '<div class="card" style="width: 18rem;">'  +
+          '  <img class="card-img-top" src=" ' + restaurantImage + ' ">' + '<div class="card-body">' + '<h5 class="card-title">' + " " + restaurantName + " "  + '</h5>' + '<p class="card-text">' + '<ul class="list-group list-group-flush">' + '<li class="list-group-item">' + " " + "Price: " + restaurantPrice + " "  + '</li>' + '<li class="list-group-item">' + " " + "Rating: " + restaurantRating + " "  + '</li>' + '<li class="list-group-item">' + " " + "Address: " + restaurantAddress + " "  + '</li>' + '<li class="list-group-item">' + " " + "Phone Number: " + restaurantPhone + " "  + '</li>' + '<br>';
+
+          $("#venues").append(htmlCard);
+          
+      }; //loop
     }); //response
   }); //save click
 
